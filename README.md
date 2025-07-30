@@ -60,7 +60,12 @@ pnpm stub
 文档项目启动
 
 ```bash
-pnpm docs:dev
+pnpm run docs:dev
+
+pnpm run docs:build
+
+pnpm run docs:nginx ##本地nginx
+
 ```
 
 ## License
