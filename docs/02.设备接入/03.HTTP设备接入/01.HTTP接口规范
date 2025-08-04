@@ -1,11 +1,11 @@
 ---
-title: http接口规范
+title: 01.HTTP接口规范
 date: 2025-03-05 21:25:02
-permalink: /iot/http/api
+permalink: /iot/http/api-specification
 categories:
-  - HTTP接入
+  - 设备接入
 tags:
-  - HTTP接入
+  - 设备接入
 ---
 
 # Universal IoT Platform HTTP API 文档
@@ -501,28 +501,28 @@ curl -X POST "http://your-host:port/api/openapi/v1/iot/device/report/event/your_
 
 ### 配置文件
 
-在 `src/main/resources/config/iotSdk.properties` 中配置：
+在 `src/main/resources/config/uiot.properties` 中配置：
 
 ```properties
 # 服务地址
-wasu.iot.sdk.host=your-host:port
+universal.iot.host=your-host:port
 
 # 客户端认证参数
-wasu.iot.sdk.clientId=your_client_id
-wasu.iot.sdk.clientSecret=your_client_secret
+universal.iot.clientId=your_client_id
+universal.iot.clientSecret=your_client_secret
 
 # 密码认证参数（可选）
-wasu.iot.sdk.username=your_username
-wasu.iot.sdk.password=your_password
+universal.iot.username=your_username
+universal.iot.password=your_password
 
 # 认证类型：password 或 client_credentials
-wasu.iot.sdk.grantType=client_credentials
+universal.iot.grantType=client_credentials
 
 # 客户端用户ID（可选）
-wasu.iot.sdk.config.client.userId=1
+universal.iot.config.client.userId=1
 
 # 是否启用客户端用户ID（可选）
-wasu.iot.sdk.config.client.enable=true
+universal.iot.config.client.enable=true
 ```
 
 ### 环境变量
@@ -530,10 +530,10 @@ wasu.iot.sdk.config.client.enable=true
 也可以通过环境变量配置：
 
 ```bash
-export wasu.iot.sdk.host=your-host:port
-export wasu.iot.sdk.clientId=your_client_id
-export wasu.iot.sdk.clientSecret=your_client_secret
-export wasu.iot.sdk.grantType=client_credentials
+export universal.iot.host=your-host:port
+export universal.iot.clientId=your_client_id
+export universal.iot.clientSecret=your_client_secret
+export universal.iot.grantType=client_credentials
 ```
 
 ## 更新日志
