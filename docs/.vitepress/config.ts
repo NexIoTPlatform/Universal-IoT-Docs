@@ -157,7 +157,7 @@ export default defineConfig({
         link: "/guide/intro",
         activeMatch: "/01.平台介绍/",
       },
-      { text: "设备接入", link: "/iot/connected", activeMatch: "/02.设备接入/" },
+      { text: "设备接入", link: "/iot/tcp/connected", activeMatch: "/02.设备接入/" },
       // { text: "开发", link: "/develop/intro", activeMatch: "/15.主题开发/" },
       // {
       //   text: "资源",
