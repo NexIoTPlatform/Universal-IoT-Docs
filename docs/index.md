@@ -5,9 +5,9 @@ tk:
   teekHome: false
 
 hero:
-  name: Universal-IoT
-  text:
-  tagline: ✨一款基于Java21实现的高度灵活、配置化、云调试器的物联网平台
+  name: TeamBee
+  text: Universal-IoT
+  tagline: ✨ 基于Java21的企业级物联网平台，支持多协议直连、云调试、配置化管理
   actions:
     - theme: brand
       text: 开始
@@ -20,19 +20,37 @@ hero:
     alt: Teek
 
 features:
-  - icon: 📖
-    title: 全协议 && 支持
-    details: 包括运营商天翼物联（AEP）、直连TCP、MQTT和云云对接。
-  - icon: 🎉
-    title: 全场景 & 生产级
-    details: 物联网20余场景业务使用，性能卓越，不再受制于人
-  - icon: 🎇
-    title: 企业级 & 验证
-    details: 适合中小企业想有自己的业务积累、10万设备级单机轻松应对
-  - icon: 📝
-    title: 架构合理
-    details: JDK21 LTS长期支持，SpringBoot 3.5单体架构，想拆微服务，看你自己规模。
+  - icon: 🔌
+    title: 多协议直连接入
+    details: 支持TCP直连、MQTT直连、HTTP REST、天翼物联等多种设备接入方式，满足不同场景需求
+  - icon: 🛠️
+    title: 云调试开发环境
+    details: 基于浏览器的实时协议开发和调试，支持在线测试、热部署，让协议开发更高效
+  - icon: 🏢
+    title: 企业级架构设计
+    details: 基于Java21 + SpringBoot 3.5，支持10万设备级单机部署，性能卓越稳定可靠
+  - icon: 📊
+    title: 完整管理生态
+    details: 产品管理、设备监控、应用输出、通知管理、场景联动，提供一体化解决方案
 ---
+
+## ✅ 平台功能状态
+
+| 功能模块           | 状态      | 核心特性                            |
+| ------------------ | --------- | ----------------------------------- |
+| **TCP直连接入**    | ✅ 已实现 | 二进制/16进制报文、协议解析、云调试 |
+| **MQTT直连接入**   | ✅ 已实现 | 物模型/透传模式、在线测试、支持EMQX |
+| **HTTP设备接入**   | ✅ 已实现 | REST API、OAuth2认证、Java SDK      |
+| **天翼物联接入**   | ✅ 已实现 | 设备注册、数据上报、指令下发        |
+| **移动OneNET接入** | 🔄 开发中 | 设备注册、数据上报、指令下发        |
+| **云云对接接入**   | 🔄 开发中 | 多平台数据同步、协议转换            |
+
+## 🚀 快速开始
+
+- **📖 [平台介绍](/guide/intro)** - 了解平台架构和核心功能
+- **🔌 [TCP直连接入](/iot/tcp/prepare)** - 学习TCP直连设备接入流程
+- **📡 [MQTT直连接入](/iot/mqtt/important-notice)** - 掌握MQTT直连协议接入
+- **🌐 [HTTP设备接入](/iot/http/api-specification)** - 使用HTTP REST API
 
 ## 💡 反馈交流
 
