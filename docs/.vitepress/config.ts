@@ -14,7 +14,7 @@ const description = [
 ].toString();
 
 const teekConfig = defineTeekConfig({
-  author: { name: "Teeker", link: "https://github.com/Kele-Bingtang" },
+  author: { name: "Alex-IoT", link: "https://github.com/Kele-Bingtang" },
   blogger: {
     avatar: "/avator.png",
     shape: "circle-rotate",
