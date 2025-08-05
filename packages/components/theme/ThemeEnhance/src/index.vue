@@ -26,7 +26,7 @@ const isMobile = useMediaQuery(mobileMaxWidthMedia);
 
 const disabledList = computed(() => {
   return {
-    layoutSwitch: themeEnhanceConfig.value.layoutSwitch?.disabled ?? false,
+    layoutSwitch: themeEnhanceConfig.value.layoutSwitch?.disabled ?? true,
     themeColor: themeEnhanceConfig.value.themeColor?.disabled ?? false,
     spotlight: themeEnhanceConfig.value.spotlight?.disabled ?? false,
   };

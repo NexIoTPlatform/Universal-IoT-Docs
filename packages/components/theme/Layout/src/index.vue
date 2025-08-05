@@ -64,7 +64,7 @@ const teekConfig = getTeekConfigRef<Required<TeekConfig>>(null, {
   bodyBgImg: {},
   notice: {},
   comment: { provider: "" },
-  articleUpdate: { enabled: true },
+  articleUpdate: { enabled: false },
   articleTopTip: undefined,
   articleBottomTip: undefined,
   articleShare: {},

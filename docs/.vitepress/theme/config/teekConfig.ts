@@ -5,6 +5,7 @@ export const teekDocConfig: TeekConfig = {
   themeEnhance: {
     layoutSwitch: {
       defaultMode: "bothWidthAdjustable",
+      disabled: true,
     },
   },
 };
@@ -156,6 +157,7 @@ export const teekBlogBodyConfig: TeekConfig = {
   themeEnhance: {
     layoutSwitch: {
       defaultMode: "original",
+      disabled: true,
     },
   },
 };

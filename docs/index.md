@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 平台介绍
-      link: /01.平台介绍/目录
+      link: /01.平台介绍/01.平台概述/01.概述
     - theme: alt
       text: 设备接入
       link: /02.设备接入/01.TCP设备接入/01.准备TCP设备
