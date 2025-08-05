@@ -10,8 +10,11 @@ hero:
   tagline: ✨ 基于Java21的企业级物联网平台，支持多协议直连、云调试、配置化管理
   actions:
     - theme: brand
-      text: 开始
-      link: /guide/intro
+      text: 平台介绍
+      link: /01.平台介绍/目录
+    - theme: alt
+      text: 设备接入
+      link: /02.设备接入/01.TCP设备接入/01.准备TCP设备
     # - theme: alt
     #   text: 配置
     #   link: /reference/config
@@ -28,7 +31,7 @@ features:
     details: 基于浏览器的实时协议开发和调试，支持在线测试、热部署，让协议开发更高效
   - icon: 🏢
     title: 企业级架构设计
-    details: 基于Java21 + SpringBoot 3.5，支持10万设备级单机部署，性能卓越稳定可靠
+    details: 基于Java21 + SpringBoot 3.5，百万级设备接入，性能卓越稳定可靠
   - icon: 📊
     title: 完整管理生态
     details: 产品管理、设备监控、应用输出、通知管理、场景联动，提供一体化解决方案
