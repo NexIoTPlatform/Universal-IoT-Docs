@@ -25,7 +25,7 @@ hero:
 features:
   - icon: 🔌
     title: 多协议直连接入
-    details: 支持TCP直连、MQTT直连、HTTP REST、天翼物联等多种设备接入方式，满足不同场景需求
+    details: 支持TCP直连、MQTT直连、天翼物联(AIoT)、HTTP REST、等多种设备接入方式，满足不同场景需求
   - icon: 🛠️
     title: 云调试开发环境
     details: 基于浏览器的实时协议开发和调试，支持在线测试、热部署，让协议开发更高效
