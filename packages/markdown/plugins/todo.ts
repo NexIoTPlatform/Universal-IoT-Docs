@@ -26,10 +26,26 @@ const todoPlugin = (md: MarkdownIt) => {
         const isChecked = content.startsWith(todoCheck);
         const checkbox = `<input class="todo-checkbox" type="checkbox" ${isChecked ? "checked" : ""} disabled />`;
 
-        // 原内容移除 "[ ] " 或 "[x] "
+        // 原内容移除 "[ ] " 或 "[x] "，但保留Markdown语法
         const text = content.slice(4);
         token.content = text;
-        if (token.children) token.children[0].content = text;
+        
+        // 确保子token也被正确更新
+        if (token.children && token.children.length > 0) {
+          token.children[0].content = text;
+          // 递归更新所有子token的内容
+          const updateChildren = (children: any[]) => {
+            children.forEach(child => {
+              if (child.content) {
+                child.content = child.content.replace(/^\[[ x]\]\s*/, '');
+              }
+              if (child.children) {
+                updateChildren(child.children);
+              }
+            });
+          };
+          updateChildren(token.children);
+        }
 
         return `<li class="todo">${checkbox}`;
       }
