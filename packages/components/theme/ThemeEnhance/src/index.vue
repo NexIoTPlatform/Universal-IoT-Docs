@@ -31,11 +31,16 @@ const disabledList = computed(() => {
     spotlight: themeEnhanceConfig.value.spotlight?.disabled ?? false,
   };
 });
+
+// 检查是否所有功能都被禁用
+const allDisabled = computed(() => {
+  return disabledList.value.layoutSwitch && disabledList.value.themeColor && disabledList.value.spotlight;
+});
 </script>
 
 <template>
   <TkPopover
-    v-if="!isMobile && themeEnhanceConfig.position === 'top'"
+    v-if="!isMobile && themeEnhanceConfig.position === 'top' && !allDisabled"
     :class="[ns.b(), ns.is(position), 'flx-align-center']"
     :popper-class="ns.e('popover')"
     :y-offset="-15"
@@ -46,19 +51,21 @@ const disabledList = computed(() => {
     <div :class="ns.e('content')">
       <slot name="teek-theme-enhance-top" />
 
-      <template v-if="!disabledList.layoutSwitch">
-        <LayoutSwitch />
-        <LayoutPageWidthSlide />
-        <LayoutDocWidthSlide />
-      </template>
+      <template v-if="!allDisabled">
+        <template v-if="!disabledList.layoutSwitch">
+          <LayoutSwitch />
+          <LayoutPageWidthSlide />
+          <LayoutDocWidthSlide />
+        </template>
 
-      <template v-if="!disabledList.themeColor">
-        <ThemeColor />
-      </template>
+        <template v-if="!disabledList.themeColor">
+          <ThemeColor />
+        </template>
 
-      <template v-if="!disabledList.spotlight">
-        <Spotlight />
-        <SpotlightStyle />
+        <template v-if="!disabledList.spotlight">
+          <Spotlight />
+          <SpotlightStyle />
+        </template>
       </template>
 
       <slot name="teek-theme-enhance-bottom" />

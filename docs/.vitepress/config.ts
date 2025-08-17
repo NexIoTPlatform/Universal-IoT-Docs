@@ -63,6 +63,18 @@ const teekConfig = defineTeekConfig({
       },
     },
   ],
+  themeEnhance: {
+    // 完全禁用主题增强功能
+    layoutSwitch: {
+      disabled: true,
+    },
+    themeColor: {
+      disabled: true,
+    },
+    spotlight: {
+      disabled: true,
+    },
+  },
 });
 
 // https://vitepress.dev/reference/site-config
@@ -196,7 +208,14 @@ export default defineConfig({
       //   ],
       // },
     ],
-    // socialLinks: [{ icon: "github", link: "https://github.com/Kele-Bingtang/vitepress-theme-teek" }],
+    socialLinks: [
+      {
+       icon: "github", link: "https://github.com/PhoenixHai/TeamBee-Universal-IoT.git" 
+      },
+      {
+        icon: "gitee", link: "https://gitee.com/wh543/TeamBee-Universal-IoT" 
+       }
+      ],
 
     search: {
       provider: "local",

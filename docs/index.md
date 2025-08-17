@@ -7,7 +7,7 @@ tk:
 hero:
   name: TeamBee
   text: Universal-IoT
-  tagline: ✨ 基于Java21的企业级物联网平台，支持多协议直连、云调试、配置化管理
+  tagline: ✨ 基于Java21的企业级物联网平台，支持多协议直连、云调试、配置化！
   actions:
     - theme: brand
       text: 平台介绍
@@ -19,8 +19,8 @@ hero:
     #   text: 配置
     #   link: /reference/config
   image:
-    src: /teek-logo-large.png
-    alt: Teek
+    src: /teek-logo-large.svg
+    alt: Universal-IoT
 
 features:
   - icon: 🔌
@@ -41,8 +41,8 @@ features:
 
 | 功能模块           | 状态      | 核心特性                                                             |
 | ------------------ | --------- | -------------------------------------------------------------------- |
-| **TCP直连接入**    | ✅ 已实现 | 二进制/16进制报文、协议解析、云调试                                  |
-| **MQTT直连接入**   | ✅ 已实现 | 物模型/透传模式、在线测试、支持EMQX                                  |
+| **TCP直连接入**    | ✅ 已实现 | 二进制/16进制报文;粘包、分包全靠配置还互不影响；子域名分配不占端口；来一款终端还要改代码？No!    |
+| **MQTT直连接入**   | ✅ 已实现 | 物模型/透传模式；产品可配置独享你的EMQX节点，水平扩展无敌；自定义webhook认证                              |
 | **天翼物联接入**   | ✅ 已实现 | 产品创建、设备注册、数据上报、指令下发全API互通，无需2个平台配置切换 |
 | **HTTP设备接入**   | ✅ 已实现 | REST API、OAuth2认证、Java SDK                                       |
 | **移动OneNET接入** | 🔄 开发中 | 设备注册、数据上报、指令下发                                         |

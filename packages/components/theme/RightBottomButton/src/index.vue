@@ -30,6 +30,12 @@ const disabledThemeColor = computed(() => {
   const { themeColor = {} } = themeEnhanceConfig.value;
   return !isMobile.value || (themeColor.disabled ?? themeColor.disabledInMobile);
 });
+
+// 检查是否所有功能都被禁用
+const allDisabled = computed(() => {
+  const { layoutSwitch = {}, themeColor = {}, spotlight = {} } = themeEnhanceConfig.value;
+  return (layoutSwitch.disabled ?? true) && (themeColor.disabled ?? false) && (spotlight.disabled ?? false);
+});
 </script>
 
 <template>
@@ -39,7 +45,7 @@ const disabledThemeColor = computed(() => {
     <BackTop />
     <ToComment v-if="commentConfig.enabled && commentConfig.provider" />
     <TkThemeEnhance
-      v-if="!isMobile && themeEnhanceConfig.position === 'bottom'"
+      v-if="!isMobile && themeEnhanceConfig.position === 'bottom' && !allDisabled"
       :class="ns.e('button')"
       position="bottom"
       :y-offset="7"
