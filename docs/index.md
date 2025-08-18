@@ -14,7 +14,7 @@ hero:
       link: /01.平台介绍/01.平台概述/01.概述
     - theme: alt
       text: 设备接入
-      link: /02.设备接入/01.TCP设备接入/01.准备TCP设备
+      link: /iot/tcp/prepare
     # - theme: alt
     #   text: 配置
     #   link: /reference/config
