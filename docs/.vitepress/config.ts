@@ -210,10 +210,10 @@ export default defineConfig({
     ],
     socialLinks: [
       {
-       icon: "github", link: "https://github.com/PhoenixHai/TeamBee-Universal-IoT.git" 
+       icon: "github", link: "https://github.com/NexIoTPlatform/Universal-IoT-Java" 
       },
       {
-        icon: "gitee", link: "https://gitee.com/wh543/TeamBee-Universal-IoT" 
+        icon: "gitee", link: "https://gitee.com/NexIoT/Universal-IoT-Java" 
        }
       ],
 

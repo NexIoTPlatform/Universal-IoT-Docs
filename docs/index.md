@@ -9,15 +9,15 @@ hero:
   text: Universal-IoT
   tagline: ✨ 基于Java21的企业级物联网平台，支持多协议直连、云调试、配置化！
   actions:
+    - theme: alt
+      text: 快速开始
+      link: /iot/install
     - theme: brand
       text: 平台介绍
-      link: /01.平台介绍/01.平台概述/01.概述
+      link: /iot/connect/say
     - theme: alt
       text: 设备接入
       link: /iot/tcp/prepare
-    # - theme: alt
-    #   text: 配置
-    #   link: /reference/config
   image:
     src: /teek-logo-large.svg
     alt: Universal-IoT
